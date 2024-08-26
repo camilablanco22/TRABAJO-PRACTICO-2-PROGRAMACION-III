@@ -1,0 +1,12 @@
+
+div.cabecera{background-color: darkseagreen; font-family: "JetBrains Mono SemiBold"; font-style: italic}
+
+label{font-family: Monospaced}
+
+div.formulario,section.formulario{background-color: #b2ffe4}
+
+legend{background-color: #88d3b8; font-family: Monospaced}
+
+#btn_buscar,#btn_cancelar,#btn_aceptar{background-color: #88d3b8}
+
+footer{color: white;background-color: #0a0a16}

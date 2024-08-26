@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de vuelos</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="pagina1_css.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registrar usuario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" >Consultar vuelos/Reservar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ver reservas realizadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Eliminar reservas realizadas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center cabecera">
+        <header>
+            <br>
+            <h1>Compañía argentina</h1>
+            <h2>Gestión de vuelos</h2>
+            <br>
+        </header>
+    </div>
+
+
+    <div class="container-fluid formulario">
+
+        <form action="pagina2_css.html" method="post">
+            <fieldset>
+                <div class="container-fluid text-center">
+                  <legend><strong>CONSULTAR VUELOS DISPONIBLES</strong></legend>
+                </div>
+
+                <div class="container text-center mb-3 ">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="origen" class="form-label">Sitio de origen</label>
+                        <select name="origen" id="origen" class="form-select">
+                            <option value="1">Córdoba</option>
+                            <option value="2">Mendoza</option>
+                            <option value="3">Tucumán</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="destino" class="form-label">Destino</label>
+                        <select name="destino" id="destino" class="form-select">
+                            <option value="1">Córdoba</option>
+                            <option value="2">Mendoza</option>
+                            <option value="3">Tucumán</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-5 mb-3">
+                        <label for="fecha_vuelo" class="form-label">Fecha de vuelo</label>
+                        <input type="date" name="fecha_vuelo" id="fecha_vuelo" class="form-control" required>
+                    </div>
+                  </div>
+
+                  <div class="row mt-3">
+                      <div class="col-md-6 mb-3">
+                          <input type="submit" id="btn_buscar" class="btn" value="BUSCAR">
+                      </div>
+
+                      <div class="col-md-6 mb-3">
+                        <input type="reset" id="btn_cancelar" class="btn" value="CANCELAR">
+                      </div>
+
+                  </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
+
+
+    <footer class="text-center py-3 mt-0 mb-0">
+        Sitio Oficial de Compañía Argentina-2024
+    </footer>
+
+
+</body>
+</html>
